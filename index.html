@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Web Fundamentals Workshop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="#" class="icon solid fa-home"><span>Home</span></a>
+            <a href="#line_scatter" class="icon solid fa-folder"><span>Line Scatter</span></a>
+            <a href="#bar" class="icon solid fa-folder"><span>Bar Chart</span></a>
+            <a href="#pie" class="icon solid fa-folder"><span>Pie Chart</span></a>
+            <a href="#intro" class="icon solid fa-list"><span>Intro</span></a>
+            <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+            <a href="https://www.instagram.com/poyen_0806/" class="icon brands fa-instagram" target="_blank"><span>Instagram</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Me -->
+            <article id="home" class="panel intro">
+                <header>
+                    <h1>Poyen Wu</h1>
+                    <p>There's nothing about me.<br>Just some charts.</p>
+                </header>
+                <a href="#line_scatter" class="jumplink pic">
+                    <span class="arrow icon solid fa-chevron-right"></span>
+                    <img src="images/cat.jpg" alt="" />
+                </a>
+            </article>
+
+            <!-- line_scatter -->
+            <article id="line_scatter" class="panel">
+                <header>
+                    <h2>Line & Scatter Chart</h2>
+                </header>
+                <div id="line_and_scatter_chart"></div>
+            </article>
+
+            <!-- Contact -->
+            <article id="contact" class="panel">
+                <header>
+                    <h2>Contact Me</h2>
+                </header>
+                <form action="#" method="post">
+                    <div>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <input type="text" name="name" placeholder="Name" />
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <input type="text" name="email" placeholder="Email" />
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="subject" placeholder="Subject" />
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" placeholder="Message" rows="6"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" value="Error Button" id="submitBtn" onclick="disableSubmitButton();" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <script>
+                    function disableSubmitButton() {
+                        var submitButton = document.getElementById("submitBtn");
+                        submitButton.disabled = true;
+                    }
+                </script>
+            </article>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Untitled.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/browser.min.js" defer></script>
+    <script src="assets/js/breakpoints.min.js" defer></script>
+    <script src="assets/js/util.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" defer></script>
+    
+    <script src="assets/js/line_and_scatter_chart.js" defer></script>
+
+</body>
+
+</html>
