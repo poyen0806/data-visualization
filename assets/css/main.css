@@ -1390,7 +1390,7 @@ html {
 }
 
 body {
-    background-image: url("images/overlay.png"), url("images/bg2.jpg");
+    background-image: url("images/overlay.png"), url("images/dark_theme.jpg");
     background-repeat: repeat, no-repeat;
     background-size: auto, 100% 100%;
     background-attachment: fixed;
@@ -2078,6 +2078,7 @@ body.is-preload #wrapper {
     -webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
     -ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
     transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 #main>.panel {
@@ -2313,4 +2314,54 @@ body.is-preload #wrapper {
         margin-left: 0.5em;
     }
 
+}
+
+.source-box {
+    background-color: #fff5cc;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.source-box h3 {
+    color: #cc3300;
+}
+
+.method-box {
+    background-color: #b3e0ff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.method-box h3 {
+    color: #0066cc;
+}
+
+.insight-box {
+    background-color: #ffb3b3;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.insight-box {
+    background-color: #c9c2ff;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.insight-box h3 {
+    color: #5500ff;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
 }

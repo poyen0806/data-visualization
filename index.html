@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Web Fundamentals Workshop</title>
+    <title>Data Visualization Midterm</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -18,27 +18,25 @@
 
         <!-- Nav -->
         <nav id="nav">
-            <a href="#" class="icon solid fa-home"><span>Home</span></a>
-            <a href="#line_scatter" class="icon solid fa-folder"><span>Line Scatter</span></a>
-            <a href="#bar" class="icon solid fa-folder"><span>Bar Chart</span></a>
-            <a href="#pie" class="icon solid fa-folder"><span>Pie Chart</span></a>
-            <a href="#intro" class="icon solid fa-list"><span>Intro</span></a>
-            <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-            <a href="https://www.instagram.com/poyen_0806/" class="icon brands fa-instagram" target="_blank"><span>Instagram</span></a>
+            <a href="#" class="icon solid fa-id-card"><span>Profile</span></a>
+            <a href="#line_scatter" class="icon solid fa-chart-line"><span>Line Scatter</span></a>
+            <a href="#bar" class="icon solid fa-chart-bar"><span>Bar Chart</span></a>
+            <a href="#pie" class="icon solid fa-chart-pie"><span>Pie Chart</span></a>
+            <a href="https://www.instagram.com/poyen_0806/" class="icon brands fa-instagram"
+                target="_blank"><span>Instagram</span></a>
         </nav>
 
         <!-- Main -->
         <div id="main">
 
-            <!-- Me -->
-            <article id="home" class="panel intro">
+            <article id="profile" class="panel intro">
                 <header>
                     <h1>Poyen Wu</h1>
-                    <p>There's nothing about me.<br>Just some charts.</p>
+                    <h4 class="small-text">ID: 111502013</h4>
                 </header>
                 <a href="#line_scatter" class="jumplink pic">
                     <span class="arrow icon solid fa-chevron-right"></span>
-                    <img src="images/cat.jpg" alt="" />
+                    <img src="images/img.jpg" alt="Poyen Wu" />
                 </a>
             </article>
 
@@ -48,43 +46,93 @@
                     <h2>Line & Scatter Chart</h2>
                 </header>
                 <div id="line_and_scatter_chart"></div>
+                <div class="source-box">
+                    <h3>Source</h3>
+                    <a href="https://data.gov.tw/dataset/164513">桃園市政府桃園捷運公司——112年6月運量統計</a>
+                </div>
+                <div class="method-box">
+                    <h3>Method</h3>
+                    <h4 class="small-text">
+                        將日期設為x軸，以7天為一個單位；<br>
+                        總運量設為y軸，從70000人起以3000為一個單位。<br>
+                        以折線圖呈現，用來觀測桃園機捷的運量變化。
+                    </h4 class="small-text">
+                </div>
+                <div class="insight-box">
+                    <h3>Insight</h3>
+                    <h4 class="small-text">
+                        這份資料顯示桃園機捷6月份的運量呈現週期性變化，<br>
+                        每週一至週五有明顯增長，週末則小幅減少。<br>
+                        或許機捷的客流受到工作日通勤的影響。<br>
+                        可以提供工作日優惠或週末活動促銷，<br>
+                        以更有效地滿足不同時間段的乘客需求。
+                    </h4 class="small-text">
+                </div>
             </article>
 
-            <!-- Contact -->
-            <article id="contact" class="panel">
+            <!-- Bar -->
+            <article id="bar" class="panel">
                 <header>
-                    <h2>Contact Me</h2>
+                    <h2>Bar Chart</h2>
                 </header>
-                <form action="#" method="post">
-                    <div>
-                        <div class="row">
-                            <div class="col-6 col-12-medium">
-                                <input type="text" name="name" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <input type="text" name="email" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="subject" placeholder="Subject" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Message" rows="6"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <input type="submit" value="Error Button" id="submitBtn" onclick="disableSubmitButton();" />
-                            </div>
-                        </div>
-                    </div>
-                </form>
-
-                <script>
-                    function disableSubmitButton() {
-                        var submitButton = document.getElementById("submitBtn");
-                        submitButton.disabled = true;
-                    }
-                </script>
+                <div id="bar_chart"></div>
+                <div class="source-box">
+                    <h3>Source</h3>
+                    <a href="https://data.gov.tw/dataset/166172">民政處——金門縣112年10月份人口數統計表</a><br>
+                    <a href="https://data.gov.tw/dataset/97342">民政處——金門縣105年10月份人口數統計表</a>
+                </div>
+                <div class="method-box">
+                    <h3>Method</h3>
+                    <h4 class="small-text">
+                        將2016年與2023年金門縣的人口依村里統計，<br>
+                        將村里設為x軸，將人口數設為y軸<br>
+                        以長條圖呈現，用來比較這7年的人口變化。
+                    </h4 class="small-text">
+                </div>
+                <div class="insight-box">
+                    <h3>Insight</h3>
+                    <h4 class="small-text">
+                        這份資料顯示105年與112年金門各村里的人口數量，<br>
+                        可以發現新湖里、安美村、湖埔村在這7年人口增加明顯，<br>
+                        這種變化可能與當地經濟、社區發展或其他引人注目的因素相關。<br>
+                        可以進一步調查當地的經濟發展情況，<br>
+                        是否有新的就業機會吸引人口遷入？<br>
+                        或是有其他因素，例如：教育資源、健康照護等。<br>
+                        調查完可能原因後可為未來發展制定針對性政策，<br>
+                        提升居民在此的生活品質。
+                    </h4 class="small-text">
+                </div>
             </article>
 
+            <!-- Pie -->
+            <article id="pie" class="panel">
+                <header>
+                    <h2>Pie Chart</h2>
+                </header>
+                <div id="pie_chart"></div>
+                <div class="source-box">
+                    <h3>Source</h3>
+                    <a href="https://data.gov.tw/dataset/161188">桃園市政府社會局——桃園市中低收入含低收入戶老人生活津貼統計(111)</a>
+                </div>
+                <div class="method-box">
+                    <h3>Method</h3>
+                    <h4 class="small-text">
+                        將111年桃園低收補助的金額依項目分類，<br>
+                        以圓餅圖呈現，用來做更詳細的分析。
+                    </h4 class="small-text">
+                </div>
+                <div class="insight-box">
+                    <h3>Insight</h3>
+                    <h4 class="small-text">
+                        這份資料顯示111年桃園低收入戶生活補助的數據，<br>
+                        「低收入戶兒童及少年生活補(扶)助」金額最高，<br>
+                        且與「高中職以上就學生活補助」相當，<br>
+                        顯示社會重視未成年人的生活支援。<br>
+                        這張圖表有助於了解補助資源的分配情況，<br>
+                        以進一步優化社會福利體系。
+                    </h4 class="small-text">
+                </div>
+            </article>
         </div>
 
         <!-- Footer -->
@@ -94,18 +142,20 @@
                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </div>
-
     </div>
 
     <!-- Scripts -->
+    <script src="//unpkg.com/d3" defer></script>
     <script src="assets/js/jquery.min.js" defer></script>
     <script src="assets/js/browser.min.js" defer></script>
     <script src="assets/js/breakpoints.min.js" defer></script>
     <script src="assets/js/util.js" defer></script>
     <script src="assets/js/main.js" defer></script>
     <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" defer></script>
-    
+
     <script src="assets/js/line_and_scatter_chart.js" defer></script>
+    <script src="assets/js/bar_chart.js" defer></script>
+    <script src="assets/js/pie_chart.js" defer></script>
 
 </body>
 
